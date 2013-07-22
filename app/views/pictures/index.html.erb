@@ -3,4 +3,7 @@
 <% @pictures.each do |picture| %>
   <p><%= picture[:title] %>, <%= picture[:artist] %></p>
   <img src="<%= picture[:url] %>">
+
+  <p><%= @picture[:title] %>, <%= @picture[:artist] %></p>
+<img src="<%= @picture[:url] %>">
 <% end %>
