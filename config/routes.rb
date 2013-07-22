@@ -6,4 +6,6 @@ Photogurpractice::Application.routes.draw do
 
   post 'pictures' => "pictures#create"
   get 'pictures/new' => 'pictures#new' 
+  get 'pictures/:id/edit' => "pictures#edit", as: "edit_picture"
+put 'pictures/:id' => "pictures#update", as: "update_picture"
 end
